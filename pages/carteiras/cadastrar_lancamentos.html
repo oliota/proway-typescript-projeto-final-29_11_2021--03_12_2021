@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lançamentos</title>
+    <script src="/jquery.min.js">   </script>
+    <script src="/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap.min.css">
+</head>
+
+<body class="container-fluid">
+    <br>
+    <div class="row m-2">
+        <div class="col">
+            <div class="card">
+                <div class="card body p-2">
+                    <div class="row">
+                        <div class="col"> <span id="nome"></span></div>
+                        <div class="col-1">
+                            <a href="/">Sair</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row m-2">
+        <div class="col-3">
+            <div class="card vh-100">
+                <div class="card-body p-2" id="menu_lateral">
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card vh-100">
+                <div class="card-body p-2">
+
+
+                    <div class="row">
+                        <div class="col">
+                            <div class="card">
+                                <div class="card-header">
+                                    <div class="row">
+                                        <div class="col">
+                                            Carteira
+                                        </div>
+                                        <div class="col-3">
+                                            <button id="atualizar_carteira"
+                                                class="form-control btn btn-primary">Atualizar dados</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="saldo_form">Saldo</label>
+                                            <input type="number" class="form-control" id="saldo_form" disabled>
+                                        </div>
+                                        <div class="col">
+                                            <br>
+                                            <input class="form-check-input" type="radio"  name="pode_dever"
+                                                id="pode_dever">
+                                            <label class="form-check-label" for="pode_dever">
+                                                Pode dever
+                                            </label> 
+                                            <input class="form-check-input" type="radio" name="pode_dever"  id="nao_pode_dever">
+                                            <label class="form-check-label" for="nao_pode_dever">
+                                                Ñ pode dever
+                                            </label>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class='col'>
+                            <form>
+
+
+                                <div class='card'>
+                                    <div class='card-header'>
+                                        <div class="row">
+
+                                            <div class="col">
+
+                                                Formulário
+                                            </div>
+                                            <div class="col-2">
+                                                <button id="enviar"
+                                                    class="btn btn-success form-control  ">Adicionar</button>
+                                                <button id="editar"
+                                                    class="btn btn-success form-control  ">Atualizar</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class='card-body'>
+
+                                        <div class="row">
+                                            <div class="col">
+                                                <label for="titulo_form">Titulo</label>
+                                                <input type="text" class="form-control" id="titulo_form">
+                                            </div>
+                                            <div class="col-2">
+                                                <label for="valor_form">Valor</label>
+                                                <input type="number" class="form-control" id="valor_form">
+                                            </div>
+                                            <div class="col-4">
+                                                <label for="data_form">Data</label>
+                                                <input type="datetime-local" class="form-control" id="data_form"
+                                                    min="01/12/2021">
+                                            </div>
+                                            <div class="col">
+                                                <br>
+                                                <input class="form-check-input" type="radio" checked="true" name="tipo"
+                                                    id="debito">
+                                                <label class="form-check-label" for="debito">
+                                                    Debito
+                                                </label>
+                                                <input class="form-check-input" type="radio" name="tipo" id="credito">
+                                                <label class="form-check-label" for="credito">
+                                                    Credito
+                                                </label>
+                                            </div>
+
+                                        </div>
+                                        <div class="row">
+                                            <div class="col">
+                                                <label for="observacao">Observação</label>
+                                                <textarea class="form-control" id="" cols="30" rows="3" id="observacao"></textarea>
+                                            </div>
+
+                                        </div>
+
+                                    </div>
+                                    <div class='card-footer'>
+
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div class="row">
+                        <div class='col'>
+                            <div class='card'>
+                                <div class='card-header'>Lançamentos</div>
+                                <div class='card-body'>
+                                    <table class="table table-bordered">
+
+                                        <thead>
+                                            <th>Data</th>
+                                            <th>Tipo</th>
+                                            <th>Titulo</th>
+                                            <th>Valor</th>
+                                        </thead>
+                                        <tbody>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class='card-footer'></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/pages/principal.js" type="module"></script>
+    <script src="/pages/carteiras/cadastrar_lancamentos..js" type="module"></script>
+</body>
+
+</html>

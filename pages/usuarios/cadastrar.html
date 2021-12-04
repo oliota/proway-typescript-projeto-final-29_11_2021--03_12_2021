@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <script src="/jquery.min.js">   </script>
+    <script src="/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap.min.css">
+</head>
+
+<body class="container-fluid">
+    <br>
+    <div class="row m-2">
+        <div class="col">
+            <div class="card">
+                <div class="card body p-2">
+                    <div class="row">
+                        <div class="col"> <span id="nome"></span></div>
+                        <div class="col-1">
+                            <a href="/">Sair</a>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="row m-2">
+        <div class="col-3">
+            <div class="card vh-100">
+                <div class="card-body p-2" id="menu_lateral">
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card vh-100">
+                <div class="card-body p-2">
+
+
+                    <div class="row">
+                        <div class='col'>
+                            <form>
+
+                            
+                            <div class='card'>
+                                <div class='card-header'>
+                                    <div class="row">
+
+                                        <div class="col">
+                                            
+                                            Formulário
+                                        </div>
+                                        <div class="col-2">
+                                            <button id="enviar" class="btn btn-success form-control  ">Adicionar</button>
+                                            <button id="editar" class="btn btn-success form-control  ">Atualizar</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='card-body'>
+
+                                    <div class="row">
+                                        <div class="col">
+                                            <label for="nome">Nome</label>
+                                            <input type="text" class="form-control" id="nome_form">
+                                        </div>
+                                        <div class="col">
+                                            <label for="email">Email</label>
+                                            <input type="email" class="form-control" id="email_form">
+                                        </div>
+                                        <div class="col">
+                                            <label for="senha">Senha</label>
+                                            <input type="password" class="form-control" id="senha_form">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class='card-footer'>
+
+                                </div>
+                            </div>
+                        </form>
+                        </div>
+                    </div>
+
+                    <hr>
+                    <div class="row">
+                        <div class='col'>
+                            <div class='card'>
+                                <div class='card-header'>Usuários</div>
+                                <div class='card-body'>
+                                    <table class="table table-bordered">
+
+                                        <thead>
+                                            <th>Nome</th>
+                                            <th>Email</th>
+                                            <th>Senha</th>
+                                            <th>Ações</th>
+                                        </thead>
+                                        <tbody>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class='card-footer'></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="/pages/principal.js" type="module"></script>
+    <script src="/pages/usuarios/cadastrar_usuario.js" type="module"></script>
+</body>
+
+</html>

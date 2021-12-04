@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastrar</title>
+    <script src="/jquery.min.js">   </script>
+    <script src="/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap.min.css">
+</head>
+
+<body class="container">
+
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-6">
+            <form>
+                <div class="card ">
+                    <div class="card-header bg-primary text-light">Criar conta</div>
+                    <div class="card-body">
+                        <label for="nome">Nome</label>
+                        <input type="text" class="form-control" id="nome" required>
+
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+
+                        <label for="senha">Senha</label>
+                        <input type="password" class="form-control" id="senha" required>
+
+                    </div>
+                    <div class="card-footer text-center">
+                        <button type="button" class="btn btn-primary" id="cadastrar">Cadastrar</button>
+                        <br>
+                        <a href="/index.html">Já tenho uma conta</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col"></div>
+    </div>
+
+    <script src="/cadastrar.js" type="module"></script>
+</body>
+
+</html>

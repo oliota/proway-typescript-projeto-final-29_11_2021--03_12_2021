@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <script src="/jquery.min.js">   </script>
+    <script src="/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="/bootstrap.min.css">
+</head>
+
+<body class="container">
+
+
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-6">
+            <form>
+                <div class="card ">
+                    <div class="card-header bg-success text-light">Login</div>
+                    <div class="card-body">
+                        <label for="email">Email</label>
+                        <input type="email" class="form-control" id="email" required>
+                        <label for="senha">Senha</label>
+                        <input type="password" class="form-control" id="senha" required>
+
+                    </div>
+                    <div class="card-footer text-center">
+                        <button type="button" class="btn btn-success" id="entrar">Entrar</button>
+                        <br>
+                        <a href="/cadastrar.html">Não tenho uma conta</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col"></div>
+    </div>
+
+    <script src="/login.js" type="module"></script>
+</body>
+
+</html>
